@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Checkout System</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Library Book Checkout System</h1>
+        </div>
+
+        <!-- Form to add a new book (enqueue) -->
+        <div class="card">
+            <div class="input-section">
+                <input type="text" id="bookInput" placeholder="Enter book name">
+                <button class="btn-primary" onclick="enqueue()">Check Out</button>
+            </div>
+
+            <!-- Button to return a book (dequeue) -->
+            <div class="action-section">
+                <button class="btn-secondary" onclick="dequeue()">Return Book</button>
+            </div>
+        </div>
+
+        <!-- Display checked-out books -->
+        <div class="card">
+            <div class="output-section">
+                <h2>Checked-out Books</h2>
+                <ul id="bookList"></ul>
+            </div>
+
+            <!-- Error messages -->
+            <div id="message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
