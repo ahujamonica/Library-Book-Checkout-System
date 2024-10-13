@@ -1,4 +1,3 @@
-// script.js
 
 const MAX = 5;
 let queue = [];
